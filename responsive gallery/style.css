@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.gallery {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: black;
+}
+
+img {
+  width: 100%;
+}
+
+.case {
+  margin-top: 5px;
+}
+
+@media (min-width: 640px) {
+  .case {
+    margin-left: 6px;
+    margin-top: 2px;
+    flex: 1 calc(50% - 10px);
+  }
+}
+
+@media (min-width: 860px) {
+  .case {
+    flex: 1 calc(33% - 10px);
+  }
+}
+
+@media (min-width: 1024px) {
+  .case {
+    flex: 1 calc(25% - 10px);
+  }
+}

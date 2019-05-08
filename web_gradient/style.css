@@ -1,0 +1,294 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: 'BenchNine', sans-serif;
+  font-size: 100%;
+}
+.main-container {
+  background: linear-gradient(to right, #d7005c, #6e00bd);
+}
+
+img {
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+.pic {
+  width: 32px;
+  height: 32px;
+}
+
+.text h1{
+  margin: 0 0 0 10px;
+  padding: 0 0 0 10px;
+  color: white;
+  border-left: solid 1px white;
+  font-size: 26px;
+  font-weight: 300;
+}
+
+.nav-bar {
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.dropbtn {
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    background: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: linear-gradient(to right, #d7005c, #6e00bd);
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right:0;
+    text-align: center;
+}
+
+.dropdown-content a {
+    color: #f1f1f1;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    color: black;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+@media (min-width: 700px) {
+ .dropdown-content {
+   display: flex;
+   position: relative;
+   box-shadow: none;
+   background: none;
+   z-index: 0;
+ }
+
+ .dropbtn {
+   display: none;
+ }
+
+ .dropdown-content a {
+     color: #f1f1f1;
+     padding: 2px;
+     margin: 0 16px;
+     font-size: 20px;
+ }
+
+.dropdown-content a:last-child {
+  border: solid 1px white;
+  border-radius: 20px;
+  padding: 5px 25px;
+  font-size: 16px;
+ }
+.dropdown-content a:hover {
+    border-bottom: solid 1px white;
+    background: none;
+    color: white;
+ }
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+ }
+}
+
+.header {
+  color: white;
+  text-align: center;
+}
+
+.header h1{
+  font-size: 68px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.header p {
+  margin-top: 0;
+  font-size: 22px;
+}
+
+.container {
+  width: 92%;
+  background-color: white;
+  margin: auto;
+}
+
+.pag {
+  flex: 1 50%;
+  text-align: center;
+  height: 120px;
+  background-color: #f6f7f8;
+}
+
+.pag a {
+  text-decoration: none;
+  color: #717171;
+  font-size: 29px;
+  padding-top: 44px;
+  display: block;
+}
+
+.pag a:focus {
+  color: #d93175;
+  text-decoration: underline;
+  background-color: white;
+  padding-bottom: 36px;
+}
+
+.content {
+  width: 75%;
+  margin:auto;
+}
+
+.content p{
+  color: #8b8b8b;
+  font-size: 20px;
+  margin-bottom: 45px;
+}
+
+.content h2{
+  color: #303030;
+  font-size: 24px;
+  font-weight: 300;
+  margin-top: 45px;
+}
+
+.content li{
+  color: #8b8b8b;
+  font-size: 20px;
+}
+
+.content ul {
+  margin-top: -32px;
+  margin-bottom: 45px;
+}
+
+.box:first-child {
+  margin-top: 45px;
+}
+
+.box:last-child {
+  padding-bottom: 45px;
+  border-bottom: none;
+}
+
+.box {
+  border-bottom: solid 1px #f4f4f6;
+}
+
+@media (min-width: 1024px) {
+  .content {
+    max-width: 60%;
+    margin:auto;
+  }
+}
+
+.case h1{
+  color: white;
+  font-size: 42px;
+  text-align: center;
+  font-weight: 300;
+  margin-top: 60px;
+}
+
+
+.button {
+  background-color: none;
+  border: solid 0.5px #b8b8b8;
+  border-radius: 2px;
+  color: white;
+  padding: 15px 40px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 14px 2px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: white;
+  color: #d93175;
+}
+
+.button:last-child {
+  padding: 15px 43px;
+}
+
+.case {
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 82px;
+  margin-top: 20px;
+}
+
+.btns {
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .btns {
+    flex-direction: row;
+  }
+
+  .button {
+    margin: 0px 16px;
+  }
+}
+
+footer {
+  background-color: white;
+  padding: 60px 40px 75px 20px;
+}
+
+footer a{
+  display: block;
+  text-decoration: none;
+  color: #303030;
+  text-align: center;
+  margin: 25px 0;
+}
+
+footer p{
+  text-align: center;
+  color: #8b8b8b;
+  margin-top: 60px;
+}
+
+@media (min-width: 768px) {
+  footer a {
+    display: inline-block;
+    margin: 6px 21px;
+  }
+
+  footer p {
+    text-align: right;
+    margin-top: 5px;
+  }
+
+  footer {
+    padding-bottom: 5px;
+  }
+}

@@ -1,0 +1,69 @@
+.bg-color {
+  background-color: #323842;
+}
+
+.jumbo-head {
+  color: white;
+  text-shadow: 1px 1px 1px #000000;
+}
+
+.jumbo-text {
+  color: red;
+}
+.img {
+  width: 100%;
+  height: 100%;
+}
+
+.details {
+  background-color: #dd3535;
+}
+.demo {
+  background-image: url('https://i.ibb.co/z291rr2/girl-1561989-1920.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 320px;
+}
+
+.details h2 {
+  color: white;
+}
+
+.details li {
+  color: white;
+  line-height: 40px;
+}
+
+.last{
+  margin-top: -17px;
+}
+
+@media (min-width: 768px) {
+  .last{
+    margin-top: 87px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .last{
+    margin-top: 46px;
+  }
+}
+
+footer {
+  background-color: #323842;
+}
+
+footer .nav-link{
+  color: white;
+}
+
+footer p{
+  color: white;
+  padding-left: 15px;
+}
+
+footer .nav-link:hover {
+  text-decoration: underline;
+}
